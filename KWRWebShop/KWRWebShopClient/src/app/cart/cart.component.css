@@ -1,0 +1,50 @@
+.table {
+  background-color: lightgray;
+  align-content: center;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+th,
+td {
+  width: 250px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  text-align: center;
+}
+
+.emptyCart {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.left {
+  font-size: 30px;
+  margin-right: 600px;
+}
+
+.right {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.total {
+  margin-left: 100%;
+  font-size: large;
+  font-weight: bold;
+  float: right;
+  width: 300px;
+}
+
+.buy {
+  float: right;
+}

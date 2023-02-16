@@ -1,0 +1,41 @@
+.orderholder {
+  border: 3px solid lightgray;
+  padding: 20px;
+  box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Dashboard {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  padding: 2px;
+  margin-bottom: 15px;
+}
+
+.orderTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 98%;
+}
+
+.orderTable td,
+.orderTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.orderTable tr:hover {
+  background-color: #ddd;
+}
+
+.orderTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.orderTableBtn {
+  width: 70px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}

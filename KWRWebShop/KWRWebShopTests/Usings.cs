@@ -1,0 +1,11 @@
+global using Xunit;
+global using KWRWebShopAPI.DTOs;
+global using KWRWebShopAPI.Services;
+global using KWRWebShopAPI.Database.Entities;
+global using KWRWebShopAPI.Repositories;
+global using Moq;
+global using KWRWebShopAPI.Controllers;
+global using Microsoft.AspNetCore.Mvc.Infrastructure;
+global using KWRWebShopAPI.Database;
+global using Microsoft.EntityFrameworkCore;
+global using KWRWebShopAPI.Helpers;

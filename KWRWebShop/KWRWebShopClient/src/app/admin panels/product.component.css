@@ -1,0 +1,91 @@
+.FormHolder {
+  position: absolute;
+  margin: 20px 100px 200px 800px;
+  border: 3px solid lightgray;
+  padding: 20px;
+  box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* h1{
+    margin: -10px 100px 200px 800px;
+    position: absolute;
+} */
+
+.Dashboard {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.NavnLabel {
+  font-size: 30px;
+}
+
+.ProductInput {
+  width: 230px;
+  height: 20px;
+  margin: 0px 0px 0px 20px;
+}
+.BrandInput {
+  width: 230px;
+  height: 20px;
+  margin: 0px 0px 0px 18px;
+}
+.DescInput {
+  width: 230px;
+  height: 20px;
+  margin: 0px 0px 0px 51px;
+}
+.PriceInput {
+  width: 230px;
+  height: 20px;
+  margin: 0px 0px 0px 130px;
+}
+
+.CategoryInput {
+  width: 239px;
+  height: 20px;
+  margin: 0px 0px 0px 88px;
+}
+
+.ProductButtons {
+  margin: 10px 10px 10px 2px;
+  width: 216px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.CategoryButtonHolder {
+  margin: -30px 30px 20px 80px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.ProductTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 98%;
+}
+
+.ProductTable td,
+.ProductTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ProductTable tr:hover {
+  background-color: #ddd;
+}
+
+.ProductTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.ProductTableBtn {
+  width: 60px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}

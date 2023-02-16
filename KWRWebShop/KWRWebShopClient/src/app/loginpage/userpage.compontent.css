@@ -1,0 +1,12 @@
+h3{
+   font-size: 30px;
+}
+
+p{
+    font-size: 20px;  
+}
+
+.UserBtns{
+    border: 1px solid lightgray;
+    cursor: pointer;
+}

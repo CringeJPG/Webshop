@@ -1,0 +1,37 @@
+﻿namespace KWRWebShopAPI.DTOs
+{
+    public class CustomerRequest
+    {
+        [Required]
+        [StringLength(32, ErrorMessage = "Cannot be longer than 32 chars.")]
+        public string FirstName { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(32, ErrorMessage = "Cannot be longer than 32 chars.")]
+        public string LastName { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(64, ErrorMessage = "Cannot be longer than 64 chars.")]
+        public string Address { get; set; } = string.Empty;
+
+        [Required]
+        public DateTime Created { get; set; } = DateTime.Now;
+
+        public CustomerLoginCreate Login { get; set; }
+    }
+    public class CustomerLoginCreate
+    {
+        [Required]
+        [StringLength(32, ErrorMessage = "Cannot be longer than 32 chars.")]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        [StringLength(32, ErrorMessage = "Cannot be longer than 32 chars.")]
+        public string Password { get; set; } = string.Empty;
+
+        [Required]
+        [Range(0, 1, ErrorMessage = "Type can either be 0 for user, or 1 for admin.")]
+        public Role Type { get; set; } 
+
+    }
+}

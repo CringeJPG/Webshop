@@ -1,0 +1,32 @@
+<div class="center headerWrapper">
+  <label class="left">Varer i kurven</label>
+  <label class="right" (click)=" clearCartBtn()">Tøm kurven</label>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Produkt id</th>
+        <th>Produkt navn</th>
+        <th>Pris</th>
+        <th>Mængde</th>
+      </tr>
+    </thead>
+    <div *ngIf="cartItems.length > 0;else empty">
+      <tbody>
+        <tr *ngFor="let cartItem of cartItems">
+          <td> {{ cartItem.productId }} </td>
+          <td> {{ cartItem.name }} </td>
+          <td> {{ cartItem.price | currency: 'kr. ' }} </td>
+          <td><input type="number" class="unselectable" [(ngModel)]="cartItem.amount" min="1" max="99"
+              onkeydown="return false" (ngModelChange)="amountChange(cartItem)" style="width: 40px;">
+          </td>
+          <button style="border: 0;" (click)="removeItemFromCart(cartItem.productId)">x</button>
+        </tr>
+      </tbody>
+      <label class="total">Total: {{ total | currency: 'kr. '}}</label>
+      <button class="buy" (click)="createOrder()">Køb</button>
+    </div>
+  </table>
+  <ng-template #empty>
+    <label class="center emptyCart">Du har ingen varer i kurven</label>
+  </ng-template>
+</div>

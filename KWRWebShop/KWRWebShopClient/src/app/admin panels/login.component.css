@@ -1,0 +1,63 @@
+.FormHolder {
+  position: absolute;
+  margin: 20px 100px 200px 800px;
+  border: 3px solid lightgray;
+  padding: 20px;
+  box-shadow: rgb(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Dashboard {
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.NavnLabel {
+  font-size: 30px;
+}
+
+.NavnInput {
+  width: 230px;
+  height: 20px;
+}
+
+.CategoryButtons {
+  width: 120px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.CategoryButtonHolder {
+  margin: -30px 30px 20px 80px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.CategoryTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: -50px 0px 0px 0px;
+}
+
+.CategoryTable td,
+.CategoryTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.CategoryTable tr:hover {
+  background-color: #ddd;
+}
+
+.CategoryTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.CategoryTableBtn {
+  width: 60px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
